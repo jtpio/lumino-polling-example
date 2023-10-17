@@ -51,7 +51,9 @@
         "watch:labextension": "jupyter labextension watch ."
     },
     "dependencies": {
-        "@jupyterlab/application": "^4.0.0"
+        "@jupyterlab/application": "^4.0.0",
+        "@jupyterlab/services": "^7.0.0",
+        "@lumino/polling": "^2.1.2"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.0.0",

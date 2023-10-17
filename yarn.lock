@@ -455,7 +455,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jupyterlab/services@npm:^7.0.7":
+"@jupyterlab/services@npm:^7.0.0, @jupyterlab/services@npm:^7.0.7":
   version: 7.0.7
   resolution: "@jupyterlab/services@npm:7.0.7"
   dependencies:
@@ -3533,6 +3533,8 @@ __metadata:
   dependencies:
     "@jupyterlab/application": ^4.0.0
     "@jupyterlab/builder": ^4.0.0
+    "@jupyterlab/services": ^7.0.0
+    "@lumino/polling": ^2.1.2
     "@types/json-schema": ^7.0.11
     "@types/react": ^18.0.26
     "@types/react-addons-linked-state-mixin": ^0.14.22
