@@ -3,8 +3,6 @@ import {
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
-import { ServerConnection } from '@jupyterlab/services';
-
 import { Poll } from '@lumino/polling';
 
 /**
@@ -16,27 +14,29 @@ const plugin: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   activate: (app: JupyterFrontEnd) => {
     // TODO: use the URL of your server
-    const URL = 'http://localhost:8000';
+    const URL = 'http://localhost:8080';
 
-    const defaultSettings = ServerConnection.makeSettings();
     const poll = new Poll({
       auto: false,
       factory: async () => {
-        const response = await ServerConnection.makeRequest(
-          URL,
-          {},
-          defaultSettings
-        );
-        if (response.status === 200) {
-          // stop the poll
-          console.log('Server is up and running!');
-          await poll.stop();
+        let response: Response;
+        try {
+          response = await fetch(URL);
+        } catch (error) {
+          console.log('Server is not up yet, retrying...');
           return;
         }
-        console.log('Server is not up yet, retrying...');
+
+        if (!response.ok) {
+          console.log('Response is not ok, retrying...');
+          return;
+        }
+        // stop the poll
+        alert('Server is up and running!');
+        await poll.stop();
       },
       frequency: {
-        interval: 10 * 1000,
+        interval: 5 * 1000, // every 5 seconds
         backoff: true,
         max: 300 * 1000
       },
@@ -46,6 +46,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     // start the poll on plugin startup
     void poll.start();
+
+    console.log('JupyterLab extension lumino-polling-example is activated!');
   }
 };
 
