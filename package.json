@@ -1,7 +1,7 @@
 {
     "name": "lumino-polling-example",
     "version": "0.1.0",
-    "description": "A JupyterLab extension to demonstrate the Lumino Polling",
+    "description": "A JupyterLab extension to demonstrate how to use a Lumino Poll object",
     "keywords": [
         "jupyter",
         "jupyterlab",

@@ -1,7 +1,10 @@
 # lumino_polling_example
 
 [![Github Actions Status](https://github.com/jtpio/lumino-polling-example/workflows/Build/badge.svg)](https://github.com/jtpio/lumino-polling-example/actions/workflows/build.yml)[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jtpio/lumino-polling-example/main?urlpath=lab)
-A JupyterLab extension to demonstrate the Lumino Polling
+
+A JupyterLab extension to demonstrate how to use a Lumino Poll object.
+
+https://github.com/jtpio/lumino-polling-example/assets/591645/ccb1a0df-13c6-49dc-8d6c-ce08966e7e0a
 
 ## Requirements
 
