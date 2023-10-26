@@ -1,0 +1,20 @@
+{
+  "title": "Lumino Polling Example",
+  "description": "Example menu entry used for example",
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "jp-view-menu",
+        "label": "Open preview",
+        "rank": 80,
+        "items": [
+          {
+            "command": "lumino-polling-example:preview"
+          }
+        ]
+      }
+    ]
+  },
+  "additionalProperties": false,
+  "type": "object"
+}

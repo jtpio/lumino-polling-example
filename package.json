@@ -89,7 +89,8 @@
     },
     "jupyterlab": {
         "extension": true,
-        "outputDir": "lumino_polling_example/labextension"
+        "outputDir": "lumino_polling_example/labextension",
+        "schemaDir": "schema"
     },
     "eslintIgnore": [
         "node_modules",
