@@ -49,7 +49,6 @@ class TestServer {
           return;
         }
         // stop the poll
-        alert('Server is up and running!');
         await this._poll.stop();
         this._ready.resolve(void 0);
       },
@@ -128,7 +127,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
           })
           .catch(reason => {
             // handle the case when the server is not ready after the timeout
-            alert(`Could not start the server: ${reason}}`);
+            alert(`Could not start the server: ${reason}`);
           });
       }
     });

@@ -4,7 +4,11 @@
 
 A JupyterLab extension to demonstrate how to use a Lumino Poll object.
 
-https://github.com/jtpio/lumino-polling-example/assets/591645/24b5fd0d-a5aa-4de1-8c3b-fd6617a94fad
+https://github.com/jtpio/lumino-polling-example/assets/591645/1406cc22-a22f-4f29-b827-eb167b1a9e5f
+
+Show a message after the timeout has elapsed (in this example the timeout is set to 10 seconds):
+
+https://github.com/jupyterlite/jupyterlite/assets/591645/77c3d11c-86de-465e-8c6b-fd115e686f81
 
 ## Requirements
 
