@@ -4,7 +4,7 @@
 
 A JupyterLab extension to demonstrate how to use a Lumino Poll object.
 
-https://github.com/jtpio/lumino-polling-example/assets/591645/ccb1a0df-13c6-49dc-8d6c-ce08966e7e0a
+https://github.com/jtpio/lumino-polling-example/assets/591645/24b5fd0d-a5aa-4de1-8c3b-fd6617a94fad
 
 ## Requirements
 
